@@ -17,6 +17,7 @@ struct Magazine {
 
 fn print_publications(publications: Vec<Publication>) {
     for publication in publications {
+        // Matching all variants to avoid error
         match publication {
             Publication::Book(ref book) => {
                 println!(
